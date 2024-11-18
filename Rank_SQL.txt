@@ -1,0 +1,3 @@
+select first_name, salary, Rank() OVER 
+(order by salary desc) Rank_Salarios
+from employees;
